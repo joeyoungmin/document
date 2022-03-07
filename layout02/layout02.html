@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github upload</title>
+    <style>
+        /* reset */
+        *{margin:0; padding:0; box-sizing: border-box; font-size:inherit; font-weight: normal; color:inherit;}
+        ul,ol{list-style:none;}
+        a{text-decoration:none;}
+        img{vertical-align:middle;}
+        body{line-height:1;}
+
+
+        h1{font-size:30px; text-align: center;margin-bottom:100px;}
+
+        .sec01{
+            padding:100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .sec01 h2{
+            font-size:30px;
+            font-weight: bold;
+            margin-bottom:20px;
+        }
+
+        .sec01 p{
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sec01 .container {
+            margin: 0 auto;
+            width:1200px;
+        }
+
+        .sec01 .container::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sec01 figure{
+             float:left;
+             width:33.33333%;
+             padding:0 15px;
+        }
+
+        .sec01 figure img{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sec01 figure p{
+            margin-bottom:20px;
+        }
+
+        .sec01 figure a{
+            width:160px;
+            height:40px;
+            background:#333;
+            color:#fff;
+            display:block;
+            margin: 0 auto;
+            line-height: 40px;
+            border-radius:20px;
+        }
+
+        /* sec1 end */
+
+        .sec02{
+            padding:100px 0;
+            background-color:transparent;
+            text-align: center;
+        }
+
+        .sec02 h2{
+            font-size:30px;
+            font-weight: bold;
+            margin-bottom:20px;
+        }
+
+        .sec02 p{
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sec02 .container {
+            margin: 0 auto;
+            width:1200px;
+        }
+
+        .sec02 .container::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sec02 figure{
+             float:left;
+             width:25%;
+             padding:0 15px;
+        }
+
+        .sec02 figure img{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sec02 figure p{
+            margin-bottom:20px;
+        }
+
+        .sec02 figure a{
+            width:160px;
+            height:40px;
+            background:red;
+            color:#fff;
+            display:block;
+            margin: 0 auto;
+            line-height: 40px;
+            border-radius:20px;
+        }
+
+        /* sec2 end */
+
+        .sec03{
+            padding:100px 0;
+            background-color:#f2f2f2;
+            text-align: center;
+        }
+
+        .sec03 h2{
+            font-size:30px;
+            font-weight: bold;
+            margin-bottom:20px;
+        }
+
+        .sec03 p{
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sec03 .container {
+            margin: 0 auto;
+            width:1200px;
+        }
+
+        .sec03 .container::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sec03 figure{
+             float:left;
+             width:20%;
+             padding:0 15px;
+        }
+
+        .sec03 figure img{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sec03 figure p{
+            margin-bottom:20px;
+        }
+
+        .sec03 figure a{
+            width:160px;
+            height:40px;
+            background:blue;
+            color:#fff;
+            display:block;
+            margin: 0 auto;
+            line-height: 40px;
+            border-radius:20px;
+        }
+
+        /* sec3 end */
+
+        .sec04{
+            padding:100px 0;
+            background-color:transparent;
+            text-align: center;
+        }
+
+        .sec04 h2{
+            font-size:30px;
+            font-weight: bold;
+            margin-bottom:20px;
+        }
+
+        .sec04 p{
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sec04 .container {
+            margin: 0 auto;
+            width:1200px;
+        }
+
+        .sec04 .container::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sec04 figure{
+             float:left;
+             width:16.666%;
+             padding:0 15px;
+        }
+
+        .sec04 figure img{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sec04 figure p{
+            margin-bottom:20px;
+        }
+
+        .sec04 figure a{
+            width:160px;
+            height:40px;
+            background:green;
+            color:#fff;
+            display:block;
+            margin: 0 auto;
+            line-height: 40px;
+            border-radius:20px;
+        }
+
+        /* sec04 end */
+
+        .sec05{
+            padding:100px 0;
+            background-color:#f2f2f2;
+            text-align: center;
+        }
+
+        .sec05 h2{
+            font-size:30px;
+            font-weight: bold;
+            margin-bottom:20px;
+        }
+
+        .sec05 p{
+            font-size:15px;
+            margin-bottom:30px;
+        }
+
+        .sec05 .container {
+            margin: 0 auto;
+            width:1200px;
+        }
+
+        .sec05 .container::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        .sec05 figure{
+             float:left;
+             width:50%;
+             padding:0 15px;
+        }
+
+        .sec05 figure img{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .sec05 figure p{
+            margin-bottom:20px;
+        }
+
+        .sec05 figure a{
+            width:160px;
+            height:40px;
+            background:lightcoral;
+            color:#fff;
+            display:block;
+            margin: 0 auto;
+            line-height: 40px;
+            border-radius:20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>layout02</h1>
+    <section class="sec01">
+        <h2>github upload</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+        </div>
+    </section>
+    <section class="sec02">
+        <h2>github upload</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+    </section>
+    <section class="sec03">
+        <h2>github upload</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+            
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+    </section>
+    <section class="sec04">
+        <h2>github upload</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+            
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+    </section>
+    <section class="sec05">
+        <h2>github upload</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+
+            <figure>
+                <img src="./layout02/img/24283C3858F778CA2E.jpg"alt="img">
+                <p>lorem ipsum dolor sit</p>
+                <a href="#!">more</a>
+            </figure>
+    </section>
+</body>
+</html>
