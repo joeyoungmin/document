@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스03</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+        *{margin:0; padding:0; box-sizing: border-box;font-size:inherit;font-weight:normal;font-style:normal;}
+        ul{list-style:none}
+        a{color:inherit; text-decoration:none;}
+        img{vertical-align: middle; max-width: 100%;}
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            color:#444;
+            line-height: 1;
+        }
+
+        .headerwrap{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            z-index: 99;
+        }
+
+        .topBanner{
+            background:#333;
+            color:#fff;
+            font-size:15px;
+            padding:5px 15px;
+        }
+
+        .topBanner .inner{
+            display:flex;
+            justify-content: space-between;
+            width:1200px;
+            margin:0 auto;
+        }
+
+        .topBanner ul{
+            display:flex;
+        }
+
+        .topBanner .left li{
+            margin-right:30px;
+        }
+
+        .topBanner .right{
+            gap:30px;
+        }
+
+        .topBanner .right li{
+            position:relative;
+        }
+
+        .topBanner .right li~li::before{
+            content:'|';
+            display:block;
+            width:2px;
+            height:12px;
+            position:absolute;
+            top:35%;
+            left:-15px;
+            transform: translateY(-50%);
+        }
+
+        .headerwrap h1{
+            text-align: center;
+        }
+
+        .headerwrap h1 img{
+            width:250px;
+        }
+
+        .gnb{
+            border-top:1px solid rgba(255,255,255,0.5);
+            border-bottom:1px solid rgba(255,255,255,0.5);
+        }
+
+        .gnb ul{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+            width:1200px;
+            margin: 0 auto;
+            color:#fff;
+            line-height:50px;
+
+        }
+
+        .mainVisual{
+            position:relative;
+            height:100vh;
+            background:url(../20220307/layout02/img/24283C3858F778CA2E.jpg) no-repeat center center/cover;
+        }
+
+        .mainVisual .slogan{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width:1200px;
+            padding: 0 15px;
+            color:#fff;
+            text-align: center;
+        }
+
+        .mainVisual .slogan h2{
+            font-size:17px;
+            font-weight: 100;
+            letter-spacing: 1em;
+            margin-bottom:30px;
+        }
+
+        .mainVisual .slogan p{
+            font-size:15px;
+            font-weight:300;
+            line-height:1.618;
+            letter-spacing: -0.025em;
+        }
+
+        .content{
+            margin:100px auto;
+            text-align:center;
+        }
+
+        .content h2{
+            font-size:17px;
+            font-weight: 100;
+            line-height:1.618;
+            letter-spacing: 1em;
+            margin-bottom:30px;
+        }
+
+        .content h2::after{
+            content:"";
+            display:block;
+            width:50px;
+            height:2px;
+            background:#369;
+            margin: 20px auto;
+        }
+
+        .content p{
+            font-size:17px;
+            font-weight: 300;
+            line-height:1.618;
+            letter-spacing: -0.025em;
+        }
+
+        .content .container{
+            display:flex;
+            width:1200px;
+            margin:0 auto;
+        }
+
+        .content .container figure{
+            flex:1;
+            padding:0 15px;
+        }
+
+        .content .container .inner{
+            margin-bottom:20px;
+            overflow: hidden;
+        }
+
+        .content .container .inner img{
+            transition: 0.5s;
+        }
+
+        .content .container .inner:hover img{
+            transform:scale(1.2);
+        }
+
+        .footerwrap{
+            padding:50px 0;
+            background:#444;
+            color:#fff;
+            text-align: center;
+            letter-spacing: -0.025em;
+            font-size:15px;
+            font-weight: 300;
+        }
+
+        .footerwrap .sns{
+            padding:20px 0;
+        }
+
+        .footerwrap .sns i{
+            padding:10px;
+            background:#333;
+            font-size:17px;
+        }
+
+        .toTop{
+            position:fixed;
+            bottom:50px;
+            right:50px;
+        }
+
+        .toTop i{
+            background:#ddd;
+            padding:10px;
+            font-size:18px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="headerwrap">
+            <div class="topBanner">
+                <div class="inner">
+                    <ul class="left">
+                        <li><a href="#!">KOR</a></li>
+                        <li><a href="#!">STORE</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#!">SWAROVSKI CLUB</a></li>
+                        <li><a href="#!">SCS</a></li>
+                        <li><a href="#!">LOGIN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1>
+                <a href="#!"><img src="" alt="logo"></a>
+            </h1>
+            <nav class="gnb">
+                <div>
+                <ul>
+                    <li><a href="#!">NEW IN</a></li>
+                    <li><a href="#!">JEWELRY</a></li>
+                    <li><a href="#!">WATCHES</a></li>
+                    <li><a href="#!">ACCESSORIES</a></li>
+                    <li><a href="#!">DECORATIONS</a></li>
+                    <li><a href="#!">GIFTS</a></li>
+                    <li><a href="#!">COLLECTIONS</a></li>
+                    <li><a href="#!">STYLE EDIT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="mainVisual">
+                <div class="slogan">
+                    <h2>SWARROVSKI CELEBRATES 25</h2>
+
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>
+                         Magni odio repellendus suscipit dolor quod. Voluptatibus<br/>
+                          placeat amet ex assumenda temporibus at, animi quis odi<br/>
+                          t provident, nisi reiciendis eligendi ipsum mollitia!</p>
+                </div>
+            </section>
+            <section class="content">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br/>
+                    Magni odio repellendus suscipit dolor quod. Voluptatibus<br/>
+                     placeat amet ex assumenda temporibus at, animi quis odi<br/>
+                     t provident, nisi reiciendis eligendi ipsum mollitia!</p>
+                     <div class="container">
+                         <figure>
+                             <div class="inner">
+                                 <img src="../20220307/layout02/img/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="">
+                             </div>
+                             <strong>SWROVSKI</strong>
+                         </figure>
+
+                         <figure>
+                            <div class="inner">
+                                <img src="../20220307/layout02/img/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="">
+                            </div>
+                            <strong>SWROVSKI</strong>
+                        </figure>
+
+                        <figure>
+                            <div class="inner">
+                                <img src="../20220307/layout02/img/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="">
+                            </div>
+                            <strong>SWROVSKI</strong>
+                        </figure>
+                     </div>
+            </section>
+        </main>
+        <footer class="footerwrap">
+             <ul>
+                 <li> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+                 <li>Unde eum suscipit dolorum iusto labore, alias cumque, con</li>
+                 <li>sequatur quidem praesentium aspernatur molestiae! Debitis q</li>
+                 <li> uam velit laborum rerum dolore deleniti, voluptate numquam!</li>
+             </ul>
+             <div class="sns">
+                 <a href="#!"><i></a>
+                 <a href="#!"><i class="xi-facebook"></i></a>
+                 <a href="#!"><i class="xi-kakaotalk"></i></a>
+                 <a href="#!"><i class="xi-youtube"></i></a>
+             </div>
+             <address>copyright</address>
+        </footer>
+        <div class="toTop">
+            <i class="xi-arrow-top"></i>
+        </div>
+    </div>
+
+    <script src="../20220311/js/jquery-1.12.4.min.js"></script>
+    <script>
+       $('.toTop').on('click' , function(){
+           $('html,body').animate({scrollTop:0},400);
+       });
+    </script>
+</body>
+</html>
