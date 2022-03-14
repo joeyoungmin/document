@@ -1,0 +1,28 @@
+/* 
+
+tag selector:1점;
+class selector:10점;
+id selector:100점;
+in-line selector:1000점; - 자바스크립트가 적용되는 레벨;
+!important selector:10000점;
+
+
+*/
+
+*{outline:1px solid black;}
+
+.header{
+    color:#fff;
+     background:#f00;
+}
+
+div{
+    color:#000;
+    background: #ff0 !important;
+}
+
+#header{
+    color:#369;
+    background-color:#0f0;
+}
+

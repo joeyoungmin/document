@@ -1,0 +1,52 @@
+.sec01{
+    padding:100px 0;
+    background-color:#f2f2f2;
+    text-align: center;
+}
+
+.sec01 .container{
+    width:1200px;
+    height:300px;
+    margin: 0 auto;
+    /* overflow:hidden;거의안씀 */
+    
+}
+
+/* .sec01 .container::after{
+    content:"가나다라마바사아자차카파타하";
+    display:block;
+    clear:both;
+
+} */
+
+/* float으로 박스를 가로배치 float은 뜬다라는 개념이있다.
+뜨는것은 부모의 높이를 0이 되게 한다.
+뜨는 것은 쪼그라든다.---->position:absolute; position:fixed;
+라는 속성에도 통한다. */
+
+.sec01 .container figure{
+    float:left;
+    width:25%;
+    padding:0 15px;
+}
+
+.sec01 .container figure img{
+    width:100%;
+
+}
+
+.sec01 h2{
+    font-size:30px;
+    font-weight:bolder;
+    margin-bottom:20px;
+}
+
+.sec01 p{
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+span{
+    display:block;
+    margin-top:30px;
+}

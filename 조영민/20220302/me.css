@@ -1,0 +1,33 @@
+*{margin:0; padding:0; font-size:inherit; box-sizing:border-box;
+font-weight:normal;}
+
+#m01{
+    padding:100px;
+    background-color:#ddd;
+    text-align:center;
+}
+
+#m01 h2{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+#m01 p{
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+#m01 .container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+#m01 .container figure{
+    float:left;
+    width:33.333%;
+    padding:0 15px;
+}
+
+#m01 .container figure img{
+    width:100%;
+}
