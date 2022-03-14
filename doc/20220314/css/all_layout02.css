@@ -1,0 +1,133 @@
+/* .mainVisual{
+    background:#ddd;
+    height:500px;
+    overflow:hidden;
+    position:relative;
+}
+
+.mainVisual .mainslide{
+    background:#ff0;
+    height:500px;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.5s
+}
+
+.mainVisual .mainslide figure{
+    width:33.333%;
+    height:500px;
+    text-align: center;
+    color:#fff;
+    font-size:100px;
+    line-height:500px;
+}
+
+.mainVisual .mainslide figure.item01{
+    background:#333;
+}
+.mainVisual .mainslide figure.item02{
+    background:#555;
+}
+.mainVisual .mainslide figure.item03{
+    background:#777;
+} */
+
+.mainVisual{
+    position:relative;
+}
+
+.mainVisual figure{
+    height:60vh;
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size:cover;
+}
+
+.mainVisual .item01{
+    background-color:#000;
+}
+
+.mainVisual .item02{
+    background-color:#f00;
+}
+
+.mainVisual .item03{
+    background-color:#ff0;
+}
+
+.mainVisual .slick-dots {
+    position:absolute;
+    left:50%;
+    bottom:100px;
+    transform:translateX(-50%);
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.mainVisual .slick-dots li{
+    width:100px;
+    height:4px;
+    background-color:#00f;
+    cursor: pointer;
+    border-radius:2px;
+}
+
+.mainVisual .slick-arrow{
+    position:absolute;
+    z-index:999;
+    width:100px;
+    height:100px;
+    transform: translateY(-50%);
+    /* border:none; */
+    background:transparent;
+    text-indent: -99999px;
+    cursor: pointer;
+    /* outline:none; */
+    border-top:10px soild #444;
+    border-left:10px soild #444;
+    border-right:none;
+    border-bottom:none;
+    
+}
+
+.mainVisual .slick-prev{
+    top:50%;
+    left:100px;
+    transform:rotate(-45deg);
+    
+}
+.mainVisual .slick-next{
+    top:50%;
+    right:100px;
+    transform:rotate(135deg);
+}
+
+.mainVisual .slick-dots li.slick-active{
+    background:lightcoral;
+}
+
+.mainVisual .slick-dots button{
+    display:none;
+}
+
+.mainVisual .slideArrow i{
+    position:absolute;
+    top:50%;
+    font-size:100px;
+    color:rgba(255,255,255,0.5);
+    transform:translateY(-50%);
+    cursor: pointer;
+}
+
+.mainVisual .slideArrow i:first-child{
+    left:100px;
+}
+.mainVisual .slideArrow i:last-child{
+    right:100px;
+}
+
+
