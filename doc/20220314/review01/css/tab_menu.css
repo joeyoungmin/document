@@ -1,0 +1,125 @@
+.allWrap {
+  background-color: #f2f2f2;
+}
+
+.header-wrap {
+  background: rgb(238, 163, 163);
+}
+
+.header-wrap .inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-wrap .inner .container {
+  background: rgb(238, 163, 163);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.topBannerToggle {
+  position: relative;
+}
+
+.topBannerToggle .inner {
+  width: 50px;
+  height: 50px;
+  background: rgb(238, 163, 163);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+
+.popup {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 25px;
+}
+
+.closebtn {
+  width: 75px;
+  height: 20px;
+  background-color: aliceblue;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.tab-menu {
+  padding: 100px 0;
+  background: #f2f2f2;
+}
+
+.tab-menu .container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.tab-menu .tab-link {
+  display: flex;
+}
+
+.tab-menu .tab-link li {
+  height: 30px;
+  line-height: 30px;
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+  border-bottom: 1px solid lightcoral;
+  border-radius: 20px 20px 0 0;
+  transition: 0.5s;
+}
+
+.tab-menu .tab-link li.active {
+  color: lightcoral;
+  border-bottom: none;
+  border-top: 1px solid lightcoral;
+  border-left: 1px solid lightcoral;
+  border-right: 1px solid lightcoral;
+}
+
+.tab-content > div {
+  width: 600px;
+  background-color: rgb(188, 247, 188);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+  border-radius: 30px;
+  display: none;
+}
+
+.tab-content > div.active {
+  display: block;
+}
+
+/* bg-fixed */
+
+.bg-fixed {
+  padding: 200px 0;
+  text-align: center;
+  color: #fff;
+  background: url(../img/구름라떼.png) no-repeat fixed center center/cover;
+}
+
+.bg-fixed h2 {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 3em;
+  margin-bottom: 30px;
+}
