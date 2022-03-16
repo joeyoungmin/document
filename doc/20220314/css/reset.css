@@ -15,7 +15,16 @@ ul,ol{
 
 a{text-decoration: none;}
 
+img{
+	vertical-align: middle;
+	max-width:100%;
+}
+
 body{
 	line-height:1;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+button{
 	font-family: 'Noto Sans KR', sans-serif;
 }
