@@ -1,0 +1,228 @@
+.wrap{}
+
+
+
+/* top_banner */
+
+.top-banner{
+    padding:24px 0;
+  background: #f3f3f3;  
+}
+
+.top-banner .container{
+    position:relative;
+    width:1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.top-banner .container h2{
+    margin-bottom:10px;
+    font-size:24px;
+    font-weight: 100;
+    letter-spacing: 0.040em;
+}
+
+.top-banner .container p{
+    margin-bottom:10px;
+    font-size:16px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+}
+
+.top-banner .container a{
+    display:inline-block;
+    height:16px;
+    line-height:14px;
+    margin-left:20px;
+    padding:0 20px;
+    border: 1px solid #333;
+    font-size:13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.top-banner .container i{
+    position:absolute;
+    top:0;
+    right:15px;
+    font-size:24px;
+    cursor: pointer;
+}
+
+
+
+/* header */
+
+.header-wrap{}
+
+
+.header-wrap .container{
+    display:flex;
+    width:1200px;
+    margin: 0 auto;
+    line-height:100px;
+}
+
+.header-wrap .container>*{
+    padding:0 15px;
+}
+
+.header-wrap .search-form{
+    margin-left: auto;
+}
+                 
+.gnb{
+
+}
+
+.gnb>ul{
+    display:flex;
+}
+
+.gnb>ul>li{
+    padding: 0 30px;
+    position:relative;
+}
+
+.gnb>ul>li~li::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    display:block;
+    width:2px;
+    height:13px;
+    background:#333;
+}
+
+/* .gnb>ul>li:first-child::after{
+    display:none;
+} */
+
+.header-wrap .search-form input[type="search"]{
+   width:130px;
+   outline: none;
+   border:none;
+   border-bottom: 1px solid black;
+}
+
+.header-wrap .search-form input[type="search"]::placeholder{
+    color:#999;
+}
+
+.header-wrap .search-form input[type="search"]:focus::placeholder{
+    color:transparent;
+}
+
+.header-wrap .search-form button{
+    outline: none;
+    border:none;
+    background:transparent;
+}
+
+.header-wrap .search-form button i{
+    font-size:15px;
+    color:#fff;
+    background-color:#333;
+    padding:10px;
+    border-radius: 50%;
+}
+
+.main-visual .visual-slide{
+    border-top:1px solid #ddd;
+}
+
+.main-visual .visual-slide figure{
+    height:450px;
+    background:#333;
+}
+
+.main-visual .visual-slide .item01{
+    background:url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+.main-visual .visual-slide .item02{
+    background:url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+.main-visual .visual-slide .item03{
+    background:url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+.main-visual .visual-slide .slick-dots{
+    position:absolute;
+    left:50%;
+    bottom:60px;
+    transform: translateX(-50%);
+    display:flex;
+    gap:10px;
+}
+
+.main-visual .visual-slide .slick-dots li{
+    width:100px;
+    height:5px;
+    background:#333;
+    transition:2s;
+}
+
+.main-visual .visual-slide .slick-dots li::after{
+    content:"";
+    display:block;
+    width:0;
+    height:100%;
+    background-color:#f00;
+}
+
+.main-visual .visual-slide figure.slick-active{
+
+}
+
+.main-visual .visual-slide figure .inner{
+    width:1200px;
+    margin: 200px auto 0 auto;
+    padding:0 15px;
+    color:#fff;
+}
+
+.main-visual .visual-slide figure .inner h3{
+    opacity:0;
+    transform: translateY(100px);
+    font-size: 60px;
+    font-weight:900;
+    margin-bottom:30px;
+    text-shadow: 0 0 2px #333;
+    transition:1s 1s;
+}
+
+.main-visual .visual-slide figure .inner p{
+    opacity:0;
+    transform: translateY(100px);
+    font-size:15px;
+    font-weight: 300;
+    transition:2s;
+}
+
+.main-visual .visual-slide figure.slick-active .inner h3{
+    opacity:1;
+    transform: translateY(0);
+}
+
+.main-visual .visual-slide figure.slick-active .inner p{
+    opacity:1;
+    transform: translateY(0);
+}
+
+
+
+.main-visual .visual-slide .slick-dots li.slick-active::after{
+    width:100%;
+    transition:1s;
+}
+
+.main-visual .visual-slide .slick-dots li.slick-active{
+    background:#fff;
+}
+
+.main-visual .visual-slide .slick-dots button{
+    display:none;
+}
