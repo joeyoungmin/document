@@ -621,11 +621,11 @@
     right:30px;
     font-size: 50px;
     color: #f00;
-    opacity: 0;
+    opacity:0;
     transition: 0.5s;
 }
 
-.custonerArea .container>div a:hover i {
+.custonerArea .container>div .btn:hover+i {
     animation: heart 1s infinite;
     opacity:1;
 }
