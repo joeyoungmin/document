@@ -69,13 +69,47 @@ $('.all-product i:last-child').on('click', function(){
 
 
 
+//유튜브 플레이어를 써볼까?
+
+jQuery("#bgndVideo").YTPlayer({
+    videoURL:'vdEyBDIQTAg',
+    containment:'.movieBg',
+    autoPlay:true,
+    mute:true,
+    startAt:0,
+    opacity:1,
+    showControls:false,
+    playOnlyIfVisible:true,
+});
+
+$('.movieBg i:first-child').on('click', function(){
+    $('#bgndVideo').YTPPause();
+});
+$('.movieBg i:last-child').on('click', function(){
+    $('#bgndVideo').YTPPlay();
+});
+
+$('.tab_menu li').on('click',function(){
+    var idx = $(this).index();
+    $(this).addClass('block').siblings().removeClass('block');
+    $('.tab_content>div').eq(idx).addClass('block').siblings().removeClass('block');
+});
+
+$('.custonerArea .container>div .btn').hover(function() {
+    $(".custonerArea .container>div i").css({
+        opacity:1,
+    });
+        }, function(){
+            $(".custonerArea .container>div i").css({
+                opacity:0,
+            });
+        });
+
+
+
 
 
 
 //////////////////////////////
-
-
-
-
 
 })
