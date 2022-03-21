@@ -95,16 +95,6 @@ $('.tab_menu li').on('click',function(){
     $('.tab_content>div').eq(idx).addClass('block').siblings().removeClass('block');
 });
 
-$('.custonerArea .container>div .btn').hover(function() {
-    $(".custonerArea .container>div i").css({
-        opacity:1,
-    });
-        }, function(){
-            $(".custonerArea .container>div i").css({
-                opacity:0,
-            });
-        });
-
 
 
 

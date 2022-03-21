@@ -625,8 +625,9 @@
     transition: 0.5s;
 }
 
-.custonerArea .container>div:hover i {
+.custonerArea .container>div a:hover i {
     animation: heart 1s infinite;
+    opacity:1;
 }
 
 @keyframes heart {
