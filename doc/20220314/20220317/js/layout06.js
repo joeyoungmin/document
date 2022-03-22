@@ -31,7 +31,13 @@ $('.visualSlide').on('afterChange', function (e,s,c){
         $('.msLeft').addClass('oo')
     } else {
         $('.msLeft').removeClass('oo')
-    }
+    };
+
+    if (c===1) {
+        $('.msRight').addClass('oo')
+    } else {
+        $('.msRight').removeClass('oo')
+    };
 });
 
 
@@ -72,7 +78,7 @@ $('.all-product i:last-child').on('click', function(){
 //유튜브 플레이어를 써볼까?
 
 jQuery("#bgndVideo").YTPlayer({
-    videoURL:'vdEyBDIQTAg',
+    videoURL:'GzUmGVjVFNg',
     containment:'.movieBg',
     autoPlay:true,
     mute:true,
@@ -103,7 +109,6 @@ $('#link').on('change',function(){
     let likSite = $(this).val();
     window.open(likSite)
 });
-
 
 
 

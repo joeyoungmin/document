@@ -11,23 +11,17 @@
 
 .top-banner .container{
     position:relative;
+    top:-2px;
     width:1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .top-banner .container h2{
-    margin-bottom:10px;
-    font-size:24px;
+    font-size:17px;
     font-weight: 100;
     letter-spacing: 0.040em;
-}
-
-.top-banner .container p{
-    margin-bottom:10px;
-    font-size:16px;
-    font-weight: 300;
-    letter-spacing: -0.025em;
+    text-align: center;
+    float:left;
 }
 
 .top-banner .container a{
@@ -61,6 +55,11 @@
     line-height:100px;
 }
 
+.header-wrap .container h1{
+    width:170px;
+    height:34px;
+}
+
 .header-wrap .container>*{
     padding:0 15px;
 }
@@ -68,7 +67,8 @@
 .header-wrap .search-form{
     margin-left: auto;
 }
-                 
+ 
+
 
 
 .gnb>ul{
@@ -80,7 +80,11 @@
     position:relative;
 }
 
-.gnb>ul>li~li::after{
+.gnb>ul>li>a{
+    font-weight: 500;
+}
+
+/* .gnb>ul>li~li::after{
     content:"";
     position:absolute;
     top:50%;
@@ -90,7 +94,7 @@
     width:2px;
     height:13px;
     background:#333;
-}
+} */
 
 /* .gnb>ul>li:first-child::after{
     display:none;
@@ -172,31 +176,43 @@
 }
 
 .mainVisual .visualSlide .msLeft.oo {
-    border-top: 100px solid #333;
+    border-top: 100px solid lightpink;
 }
 
 .mainVisual .visualSlide .msRight {
     position: absolute;
     top: 50%;
     right: 200px;
-    width: 200px;
-    height: 200px;
 
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-top: 100px solid #fff;
+    border-right: 100px solid transparent;
 
-    transform: translateY(-50%) rotate(135deg) rotateY(45deg);
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.mainVisual .visualSlide .msRight.oo {
+    border-top: 100px solid lightpink;
 }
 
 
 .mainVisual .visualSlide figure .inner {
     width: 1200px;
-    margin: 300px auto 0 auto;
+    margin: 200px auto 0 auto;
     padding: 0 15px;
     color: #fff;
 }
 .mainVisual .visualSlide figure.itm02 .inner{
-    color: #333;
+    color:#fff;
+}
+
+.mainVisual .visualSlide figure .inner div{
+    width:100px;
+    height:30px;
+    border:1px solid #fff;
+    text-align: center;
+    line-height: 26px;
+    margin-top:20px;
+    
 }
 
 .mainVisual .visualSlide figure .inner h3 {
@@ -217,6 +233,14 @@
     transition: 1s 1s;
 }
 
+.mainVisual .visualSlide figure .inner div {
+    opacity: 0;
+    transform: translateY(100px);
+    font-size: 15px;
+    font-weight: 300;
+    transition: 1s 1.3s;
+}
+
 .mainVisual .visualSlide figure.oo .inner h3 {
     opacity: 1;
     transform: translateY(0);
@@ -227,17 +251,22 @@
     transform: translateY(0);
 }
 
+.mainVisual .visualSlide figure.oo .inner div {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .mainVisual .visualSlide .itm01 {
-    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+    background: url(../images/TNF_Main_KeyVisual_MTM&Hoodie_PC1.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm02 {
-    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+    background: url(../images/0308_TNF_Main_KeyVisual_SHOES_PC2.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .itm03 {
-    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+    background: url(../images/0310_TNF_Main_KeyVisual_25_PC3.jpg) no-repeat center center/cover;
 }
 
 .mainVisual .visualSlide .slick-dots {
@@ -262,12 +291,12 @@
     display: block;
     width: 0;
     height: 100%;
-    background: #f00;
+    background: #fff;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active::after {
     width: 100%;
-    transition: 3s;
+    transition: 5s;
 }
 
 .mainVisual .visualSlide .slick-dots li.slick-active {
@@ -284,9 +313,8 @@
 }
 
 .main-product h2{
-    font-size:19px;
-    font-weight:100;
-    letter-spacing: 0.20em;
+    font-size:40px;
+    font-weight:700;
     margin-bottom:10px;
 }
 
@@ -316,31 +344,48 @@
 .main-product .container figure strong{
     display:block;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .main-product .container figure a{
     display:inline-block;
-    padding:10px 30px;
-    background:#333;
-    color:#fff;
+    padding:10px 0;
+    font-weight: 500;
+}
+
+.main-product .container figure strong:hover{
+    text-decoration: underline;
 }
 
 .main-product .container figure a:hover{
-    background:#ddd;
-    color:#3333;
+    text-decoration: underline;
 }
 
 .main-product .inner{
     overflow: hidden;
 }
 
+.inner1{
+    background: url(../images/NJ2GN10A_NJ2GN10A_hover.jpg) no-repeat center center/cover;
+}
+
+.inner2{
+    background: url(../images/NM2DM51A_NM2DM51A_hover.jpg) no-repeat center center/cover;
+}
+
+.inner3{
+    background: url(../images/NM5MN04N_NM5MN04N_hover.jpg) no-repeat center center/cover;
+}
+
 .main-product .inner img{
-    transition:1s;
+    transition:0.2s;
 }
 
 .main-product .inner:hover img{
-    transform: scale(1.5);
+    opacity: 0;
 }
+
+
 
 .main-product .container figure .label{
     position:absolute;
@@ -363,7 +408,7 @@
 
 .event-banner{
     padding:100px 0;
-    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    background: url(../images/download.jpg) no-repeat fixed center center/cover;
     text-align: center;
     color:#fff;
     filter: grayscale(1);
@@ -372,7 +417,6 @@
 .event-banner h2{
     font-size:19px;
     font-weight:100;
-    letter-spacing: 0.20em;
     margin-bottom:10px;
 }
 
@@ -380,7 +424,7 @@
     font-size:15px;
     font-weight:300;
     letter-spacing: -0.025em;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 .event-banner i {
@@ -421,9 +465,8 @@
 }
 
 .event-product h2{
-    font-size:19px;
-    font-weight:100;
-    letter-spacing: 0.20em;
+    font-size:40px;
+    font-weight:700;
     margin-bottom:10px;
 }
 
@@ -454,9 +497,8 @@
 }
 
 .all-product h2{
-    font-size:19px;
-    font-weight:100;
-    letter-spacing: 0.20em;
+    font-size:40px;
+    font-weight:700;
     margin-bottom:10px;
 }
 
@@ -513,11 +555,18 @@
 
 .all-product figure.slick-center{
     transform: scale(1.1);
+    font-weight:500;
+    text-decoration: underline;
+}
+
+.all-product figure.slick-center:hover{
+    color:#999;
 }
 
 
 .slick-center{
     position:relative;
+    cursor: pointer;
 }
 
 .all-product i{
@@ -548,9 +597,8 @@
 }
 
 .movieBg h2{
-    font-size:19px;
-    font-weight:100;
-    letter-spacing: 0.20em;
+    font-size:40px;
+    font-weight:700;
     margin-bottom:10px;
 }
 
@@ -592,16 +640,15 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background:#9acd32;
+    background:#e0ffff;
     padding: 15px 30px;
-    border:3px solid #9acd32;
+    border:3px solid #fff;
     border-radius: 10px;
     transition:0.5s;
-    color:#fff;
 }
 
 .custonerArea .container>div:hover .btn{
-    border:3px solid #99cd32;
+    border:3px solid #e0ffff;
     background:#fff;
     border-radius: 30px;
     color:#000;
@@ -654,7 +701,7 @@
 }
 
 .custonerArea .tab_menu>li.block{
-    background:#369;
+    background:#649c9c;
 }
 
 .custonerArea .tab_menu>li~li{
@@ -684,23 +731,11 @@
     overflow:hidden;
 }
 
-.pop_background{
-    width:100vw;
-    height:100vh;
-    background:rgba(0, 0, 0, 0.418);
-    position:fixed;
-    top:0;
-    left:0;
-    z-index: 9998;
-}
-
 .popup01{
     position:fixed;
     inset: 50% auto auto 50%;
     transform: translate(-50%,-50%);
     border:3px solid #ddd;
-    padding:30px;
-    background:rgba(0,0,0,0.5);
 
 }
 
@@ -715,7 +750,7 @@
     height:30px;
     outline:none;
     border:1px solid #333;
-    background:#f08080;
+    background:#000;
     color:#fff;
     text-transform:uppercase;
     font-size:14px;
