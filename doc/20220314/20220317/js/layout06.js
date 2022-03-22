@@ -95,14 +95,13 @@ $('.tab_menu li').on('click',function(){
     $('.tab_content>div').eq(idx).addClass('block').siblings().removeClass('block');
 });
 
-$('#link').on('change',function(){
-    let likSite = $(this).val();
-    if (!linkSite) return;
-    window.open(likSite)
-});
-
 $('.popup01 button').on('click',function(){
     $(this).parent().hide();
+});
+
+$('#link').on('change',function(){
+    let likSite = $(this).val();
+    window.open(likSite)
 });
 
 
