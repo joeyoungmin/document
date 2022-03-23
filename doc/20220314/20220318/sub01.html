@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+        header,footer{
+            height:200px;
+            background:#555;
+            color:#fff;
+            text-align:center;
+            line-height:100px;
+        }
+
+        article{
+            min-height:500px;
+            letter-spacing: -0.025em;
+        }
+
+        .sub-page .greeting{
+            padding:100px 0;
+        }
+
+        .sub-page .greeting h2{
+            font-size:40px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .sub-page .greeting h2 span{
+            color:blue;
+        }
+
+        .sub-page .greeting h2::after{
+            content: '';
+            display:block;
+            width:40px;
+            height:2px;
+            background:#333;
+            margin:15px auto;
+        }
+
+        .sub-page .greeting > p{
+            text-align: center;
+            font-size:15px;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+
+        .sub-page .container{
+            display:flex;
+            width:1200px;
+            margin: 0 auto;
+        }
+
+        .sub-page .container>div{
+            width:60%;
+            padding: 0 15px;
+        }
+
+        .sub-page .container>figure{
+            width:40%;
+            padding: 0 15px;
+        }
+
+        .sub-page .ceogreeting h3{
+            font-size:23px;
+            margin-bottom:50px;
+            line-height:1.5;
+        }
+
+        .sub-page .ceogreeting h3 span{
+            color:blue;
+            font-weight: 300;
+        }
+
+        .sub-page .ceogreeting p{
+            line-height:1.3;
+        }
+
+        .sub-page .ceogreeting p strong{
+            font-weight: 700;
+        }
+
+        .sub-page .info{
+            padding: 100px 0;
+            border-top:1px solid #ddd;
+        }
+
+        .sub-page .info .container{
+            display:block;
+            width:1200px;
+            margin: 0 auto;
+        }
+
+        .sub-page .info h3{
+            font-size:20px;
+            font-weight: 500;
+            margin-bottom:15px;
+            font-weight: 300;
+        }
+
+        .sub-page .info h3::before{
+            content:'';
+            display:inline-block;
+            width:3px;
+            height:17px;
+            background:#343a40;
+            margin-right:10px;
+            
+        }
+
+        .sub-page .info .infoTable{
+            width:100%;
+            border-top:2px solid #333;
+            border-bottom:1px solid #333;
+            border-collapse: collapse;
+
+        }
+
+        .sub-page .info .infoTable td,.sub-page .info .infoTable th{
+            padding:15px 17px;
+            border-bottom:1px solid #333;
+            text-align: left;
+        }
+
+        .sub-page .info .infoTable th{
+            font-weight: 900;
+        }
+
+        .sub-page .info .infoTable th~th{
+            border-left:1px solid black;
+        }
+
+        .sub-page .info .infoTable td{
+            font-weight: 300;
+        }
+
+        .sub-page .info .infoTable td~td{
+            border-left:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header>
+        header
+    </header>
+    <article class="sub-page">
+        <section class="greeting">
+            <h2><span>CEO's</span> Greenting</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <div class="container">
+                <div class="ceogreeting">
+                    <h3>Lorem ipsum dolor sit amet <span>consectetur adipisicing.</span>Lorem ipsum <span>dolor</span> sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+                         Enim harum asperiores laborum eaque explicabo odit odio aperiam?<br/><br/>
+                          Ad iste nesciunt,<br/><br/> quis libero error minus nam rem rerum cumque
+                           aperiam facere doloribus possimus commodi magnam sunt beatae<br/>
+                            eligendi iusto expedita doloremque nobis fugiat eius quod<br/><br/><br/>
+                            corrupti suscipit. Voluptas, esse placeat unde sapiente perferendis illum.<br/>
+                             Provident laboriosam reiciendis dolor facilis velit eos.<strong>차가운겨울이지나</strong>
+                            </p>
+
+                </div>
+                <figure>
+                    <img src="./images/lesedilarona01.jpg" alt="">
+                </figure>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <table class="infoTable">
+            <thead>
+                <tr>
+                    <th>1000</th>
+                    <th>2000</th>
+                    <th>3000</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1000</td>
+                    <td>2000</td>
+                    <td>3000</td>
+                </tr>
+
+                <tr>
+                    <td>1000</td>
+                    <td>2000</td>
+                    <td>3000</td>
+                </tr>
+
+            </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
+    <footer>
+        &copy; cho.
+    </footer>
+    </div>
+</body>
+</html>
