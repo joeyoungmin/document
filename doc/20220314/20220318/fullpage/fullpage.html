@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/fullpage.min.css" />
+  <style>
+    header {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    header .container {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header .container .logo {
+      font-size: 30px;
+      color: #fff;
+      padding: 5px 0;
+    }
+
+    header .container nav .h_menu {
+      display: flex;
+      margin-top: 12px;
+      gap: 50px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .xi-search {
+      font-size: 16px;
+    }
+
+    .xi-cart-o {
+      font-size: 16px;
+    }
+
+    header .container nav .h_menu li a {
+      display: block;
+      font-weight: 100;
+      transition: 0.3s;
+    }
+
+    header .container nav .h_menu li a:hover {
+      color: #b3aeae;
+    }
+
+    /* banner */
+
+    .banner {
+      width: 100%;
+      margin-top: 40px;
+      text-align: center;
+      background: #e2dede;
+      font-size: 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    .banner p {
+      padding: 10px 0;
+    }
+
+    .banner p span {
+      color: #06c;
+    }
+
+    /* main */
+
+    .section {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .section01 {
+      background: url(./img/hero_iphone13pro_preorder__d46ofk3816wm_largetall.jpg)
+        no-repeat center center/cover;
+    }
+
+    .section02 {
+      background: url(./img/hero_iphonese_preorder__e4eta8trjs66_largetall.jpg)
+        no-repeat center center/cover;
+    }
+
+    .section03 {
+      background: url(./img/hero_ipadair__flhdv47anjqu_largetall.jpg) no-repeat
+        center center/cover;
+    }
+
+    .section04 {
+      background: url(./img/promo_iphone13_preorder__egirfkqfbwom_large.jpg)
+        no-repeat center center/cover;
+    }
+
+    .section05 {
+      background: url(./img/promo_watch_lte__djeaso7ukrsm_large.jpg) no-repeat
+        center center/cover;
+    }
+
+    .section .container {
+      width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 500px;
+      cursor: pointer;
+    }
+
+    .section .container h2 {
+      display: block;
+      font-size: 50px;
+      font-weight: 500;
+      letter-spacing: -0.055em;
+    }
+
+    .section .container p {
+      font-size: 24px;
+      padding: 15px 0;
+    }
+
+    .section .container p span {
+      display: block;
+      font-size: 18px;
+      margin-top: 15px;
+      color: #bebcbc;
+    }
+
+    .con {
+      width: 210px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    .section .container a {
+      font-size: 16px;
+      color: #06c;
+    }
+
+    .section .container a:hover {
+      text-decoration: underline;
+    }
+
+    .section03 .container {
+      float: left;
+      position: relative;
+      top: 30%;
+      left: -10%;
+      transform: translateY(-50%);
+      color: #fff;
+    }
+
+    .section02 .container h2 span {
+      font-size: 25px;
+      position: relative;
+      top: -3px;
+      left: 12px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    .section02 .container h2 span::after {
+      content: "";
+      display: block;
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgb(110, 110, 110);
+      border-radius: 10px;
+      position: absolute;
+      top: -2px;
+      left: -6px;
+    }
+
+    .section03 .container h2 span {
+      background: linear-gradient(to bottom, #4622aa, #fff);
+      color: transparent;
+      -webkit-background-clip: text;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">
+          <i class="xi-apple"></i>
+        </h1>
+
+        <nav>
+          <ul class="h_menu">
+            <li><a href="#!">스토어</a></li>
+            <li><a href="#!">Mac</a></li>
+            <li><a href="#!">iPad</a></li>
+            <li><a href="#!">iPhone</a></li>
+            <li><a href="#!">Watch</a></li>
+            <li><a href="#!">AirPods</a></li>
+            <li><a href="#!">TV 및 홈</a></li>
+            <li><a href="#!">Apple 독점 제공</a></li>
+            <li><a href="#!">액세서리</a></li>
+            <li><a href="#!">고객지원</a></li>
+            <li>
+              <a href="#!"><i class="xi-search"></i></a>
+            </li>
+            <li>
+              <a href="#!"><i class="xi-cart-o"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="banner">
+      <p>
+        <span>온라인으로 쇼핑</span>하고 무료 배송, 스페셜리스트 지원 등의
+        혜택을 받으세요.
+      </p>
+    </div>
+
+    <div id="fullpage">
+      <div class="section section01">
+        <div class="container">
+          <h2>iPhone 13 Pro</h2>
+          <p>
+            알파인 그린으로 물들다.<br />
+            <span>3월 25일 출시</span>
+          </p>
+          <div class="con">
+            <a href="#!">더 알아보기<i class="xi-angle-right"></i></a>
+            <a href="#!">쇼핑하기<i class="xi-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="section section02">
+        <div class="container">
+          <p>새로운</p>
+          <h2>iPhone<span>SE</span></h2>
+          <p>
+            거침없는 파워.실속 있는 선택.<br />
+            <span>3월 25일 출시</span>
+          </p>
+          <div class="con">
+            <a href="#!">더 알아보기<i class="xi-angle-right"></i></a>
+            <a href="#!">사전 주문하기<i class="xi-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="section section03">
+        <div class="container">
+          <h2>iPhone <span>air</span></h2>
+          <p>
+            가뿐하게. 색다르게. 강력하게.<br />
+            <span>출시일은 추후 공개됩니다.</span>
+          </p>
+          <div class="con">
+            <a href="#!">더 알아보기<i class="xi-angle-right"></i></a>
+            <a href="#!">가격보기<i class="xi-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="section section04">
+        <div class="container">
+          <h2>iPhone 13</h2>
+          <p>
+            그린으로 물들다.<br />
+            <span>3월 25일 출시</span>
+          </p>
+          <div class="con">
+            <a href="#!">더 알아보기<i class="xi-angle-right"></i></a>
+            <a href="#!">쇼핑하기<i class="xi-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="section section05">
+        <div class="container">
+          <h2><i class="xi-apple"></i>WATCH</h2>
+          <p><span>SERIES 7</span></p>
+          <p>이제껏 가장 큰 디스플레이.<br /></p>
+          <div class="con">
+            <a href="#!">더 알아보기<i class="xi-angle-right"></i></a>
+            <a href="#!">구입하기<i class="xi-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/fullpage.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#fullpage").fullpage({
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+      });
+    });
+  </script>
+</html>
