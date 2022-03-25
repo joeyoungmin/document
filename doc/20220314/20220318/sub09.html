@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본으로 돌아가기</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+
+
+     .subPage{
+         letter-spacing: -0.025em;
+     }
+
+     .subPage .info__content{
+         padding:100px 0;
+     }
+
+     .subPage .info__content h2{
+         font-size:23px;
+         font-weight: 700;
+         text-align: center;
+     }
+
+     .subPage .info__content h2::after{
+         content:'';
+         display:block;
+         width:30px;
+         height:2px;
+         background:#333;
+         margin: 15px auto;
+     }
+
+     .subPage .info__content>p{
+         font-size:15px;
+         font-weight: 300;
+         text-align: center;
+         margin: 0 0 50px 0;
+     }
+
+     .subPage .info__content .fidxed__bg{
+         padding:150px 0;
+         background:url(./images/mainvisual01.jpg) no-repeat fixed center center/cover;
+         text-align: center;
+         color:#fff;
+         filter:grayscale(1);
+     }
+
+     .subPage .info__content .fidxed__bg strong{
+         display:block;
+         font-size:20px;
+         font-weight:700;
+         margin: 0 0 15px 0;
+     }
+
+     .subPage .info__content .fidxed__bg p{
+         font-size:15px;
+         font-weight:300;
+     }
+
+     .subPage .info__content .container{
+         display:flex;
+         width:1200px;
+         margin: 0 auto;
+     }
+
+     .subPage .info__content .item{
+         flex:1;
+         padding: 100px 15px;
+         position:relative;
+     }
+
+     .subPage .info__content .item h3{
+         font-size:21px;
+         font-weight: 900;
+         text-align: center;
+         margin: 0 0 30px 0;
+
+     }
+
+     .subPage .info__content .item i{
+         position:absolute;
+         top:0;
+         left:50%;
+         transform: translate(-50%,-50%);
+         font-size:50px;
+         color:#fff;
+         background-color:rgb(19, 93, 230);
+         padding:20px;
+         border-radius: 50%;
+         transition:0.5s
+     }
+
+     .subPage .info__content .item i:hover{
+         transform: translate(-50%,-50%) rotateY(360deg);
+     }
+
+
+
+     .subPage .info__content .item:nth-child(1) i{
+         background-color:#f0f000;
+         color:rgb(104, 35, 35);
+     }
+
+     .subPage .info__content .item:nth-child(3) i{
+        background: linear-gradient(to bottom left, rgb(142, 70, 236), rgb(255, 191, 95));
+     }
+
+     .subPage .info__content .dot__list li{
+         font-size:15px;
+         font-weight:300;
+         padding:5px 15px;
+         position:relative;
+         line-height: 1.4;
+     }
+
+     .subPage .info__content .dot__list li::before{
+         content:'';
+         position:absolute;
+         top:15px;
+         left:0;
+         width:5px;
+         height:5px;
+         background:#dc3545;
+         margin: 0 10px 0 0;
+     }
+
+     .subPage .info__event{
+         padding:100px 0;
+         border-top:1px solid #ddd;
+     }
+
+     .subPage .info__event h2{
+         font-size:23px;
+         font-weight: 700;
+         text-align: center;
+     }
+
+     .subPage .info__event h2::after{
+         content:'';
+         display:block;
+         width:30px;
+         height:2px;
+         background:#333;
+         margin: 15px auto;
+     }
+
+     .subPage .info__event>p{
+         font-size:15px;
+         font-weight: 300;
+         text-align: center;
+         margin: 0 0 50px 0;
+     }
+
+     .subPage .info__event .bg__box {
+         background:linear-gradient(to top, #369 70%,transparent 30%);
+     }
+
+     .subPage .info__event .bg__box .container{
+         display:flex;
+         width:1200px;
+         margin: 0 auto;
+     }
+
+     .subPage .info__event .bg__box .container > div{
+         flex:1;
+         padding:15px 15px;
+     }
+
+     .subPage .info__event .bg__box .txt{
+         border:2px solid #333;
+         background: #fff;
+         padding:0 15px;
+         overflow: hidden;
+         cursor: pointer;
+     }
+
+     .subPage .info__event .bg__box .txt h3{
+         height:100px;
+         font-size:17px;
+         font-weight: 700;
+         line-height: 100px;
+         background: #fff;
+         position:relative;
+         z-index: 999;
+     }
+
+     .subPage .info__event .bg__box .txt p{
+         height:200px;
+         font-size:15px;
+         font-weight: 300;
+         transition:5s;
+     }
+
+     .subPage .info__event .bg__box .txt:hover>h3{
+        text-decoration: underline;
+     }
+
+     .subPage .info__event .bg__box .txt:hover>p{
+         transform: translateY(-200%);
+         text-decoration: underline;
+     }
+
+        
+    </style>
+</head>
+<body>
+
+       <div class="Wrap">
+        <header>
+            header
+        </header>
+
+
+
+
+        <article class="subPage">
+            <section class="info__content">
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, laborum!</p>
+                <div class="fidxed__bg">
+                    <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, neque.</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore enim consequatur atque unde?</p>
+                </div>
+                <div class="container">
+                   <div class="item">
+                       <i class="xi-kakaotalk"></i>
+                       <h3>KAKAOTALK</h3>
+                       <ul class="dot__list">
+                        <li>사람과 세상을 향한 모든 연결의 시작, 카카오톡</li>
+                        <li>사람과 세상,그 이상을 연결하는 카카오 전 우주 통신규약을 꿈꾸는 대표 메신저 언제 어디서나 간편하게 실시간 무료로 즐겨보세요.</li>
+                        <li>당신의 오늘을 변화시키는 카카오 기술</li>
+                        <li>더 나은 세상을 만드는 카카오</li>
+                    </ul>
+                   </div>
+
+                   <div class="item">
+                    <i class="xi-facebook"></i>
+                    <h3>FACEBOOK</h3>
+                    <ul class="dot__list">
+                        <li>Facebook에 로그인하세요. 친구, 가족, 지인들과 함께 하는 즐거운 Facebook 생활이 시작됩니다.</li>
+                        <li>페이스북은 2004년2월 4일 당시 19살이었던 하버드 대학교 학생 마크 저커버그와 에두아르도 세버린이 학교 기숙사에서 사이트를 개설하며 창업하였고, 개설 첫 달에 더스틴 모스코비츠와 크리스 휴스가 동업자로 합류하여 만들어진 소셜 미디어다.</li>
+                        <li>전세계적으로 13억 5천만명 이상의 사람들이 사용하는 Facebook은 여러분이 매일매일 주변과 소통하고 관심 있는 분야의 정보를 찾아보는 방식에 즐거움을 더해주는 무료 앱입니다.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <i class="xi-instagram"></i>
+                    <h3>INSTAGRAM</h3>
+                    <ul class="dot__list">
+                        <li>계정을 만들거나 Instagram에 로그인해보세요. Instagram에서는 친구나 가족과 사진, 동영상 및 메시지를 간편하고 재미있게 캡처, 수정 및 공유할 수 있습니다.</li>
+                        <li>인스타그램(Instagram)은 메타에서 운영하고 있는 이미지 공유 중심의 미국의 소셜 미디어이다. iOS, 안드로이드, 윈도우 10, 그리고 웹에서 서비스되고 있다.</li>
+                        <li>창업자:케빈 시스트롬 (Kevin Systrom) 마이크 크리거 (Mike Krieger)</li>
+                        <li>CEO:애덤 모세리</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <div class="info__event">
+                <h2>web engineer</h2>
+                <p>front-end developer</p>
+                <div class="bg__box">
+                    <div class="container">
+                    <div class="item">
+                        <div class="txt">
+                            <h3>HTML/CSS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="txt">
+                            <h3>JAVASCRIPT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="txt">
+                            <h3>REACT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="txt">
+                            <h3>EFFORT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla doloremque eius dolore?</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </article>
+
+
+        <footer>
+            &copy; lee.
+        </footer>
+    </div>
+      
+    </article>
+
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script>
+    $(function () {
+
+
+    })
+</script>
+</html>
