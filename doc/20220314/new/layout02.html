@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+    *{margin:0; padding:0}
+    li{list-style: none; color:#000;}
+    header,section,footer{position:relative;}
+    body{font-family: 'Sunflower', sans-serif;}
+
+    .container, article{
+        width:1000px;
+        margin: 0 auto;
+    }
+
+    .gnb{
+        width:100%;
+        display:inline-block;
+       margin-bottom:30px;
+    }
+
+    .gnb ul{
+        float:right;
+    }
+
+    .gnb ul li{
+        display:inline-block;
+        padding:10px 20px;
+        float:left;
+        border:1px solid black;
+    }
+
+    .gnb ul li:first-child{
+        border-radius: 10px 0 0 10px;
+    }
+    .gnb ul li:last-child{
+        border-radius: 0 10px 10px 0;
+    }
+    .gnb ul li:nth-child(1),
+    .gnb ul li:nth-child(2),
+    .gnb ul li:nth-child(3),
+    .gnb ul li:nth-child(4){
+        border-right:none;
+    }
+
+    .logo{
+        width:100%;
+        font-size:30px;
+        line-height: 45px;
+        float:left;
+        margin-bottom:30px;
+    }
+
+    .logo h1 b{
+        font-size:40px;
+    }
+
+
+    .lnb{
+        width:100%;
+        display:inline-block;
+       margin-bottom:30px;
+    }
+
+    .lnb ul{
+        float:right;
+    }
+
+    .lnb ul li{
+        display:inline-block;
+        padding:10px 20px;
+        float:left;
+        border:1px solid black;
+    }
+
+    .lnb ul li:first-child{
+        border-radius: 10px 0 0 10px;
+    }
+    .lnb ul li:last-child{
+        border-radius: 0 10px 10px 0;
+    }
+    .lnb ul li:nth-child(1),
+    .lnb ul li:nth-child(2),
+    .lnb ul li:nth-child(3),
+    .lnb ul li:nth-child(4){
+        border-right:none;
+    }
+
+    /*section*/
+
+    article{
+        height:900px;
+    }
+
+    .con01{
+        width:690px;
+        height:860px;
+        float:left;
+    }
+
+    .content{
+        width:100%;
+        height:273.333px;
+        padding:20px;
+        box-sizing: border-box;
+        border:1px solid black;
+        margin-bottom:20px;
+    }
+
+    .content:last-child{
+        margin-bottom:0;
+    }
+
+    .content h2{
+        font-size:40px;
+    }
+
+    .con02{
+        width:290px;
+        height:860px;
+        float:right;
+        border:1px solid black;
+        box-sizing: border-box;
+    }
+
+    .content0{
+        width:100%;
+        height:107.5px;
+        padding:20px;
+        border-bottom: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .content0:last-child{
+        border-bottom: none;
+    }
+
+    .content0 figure{
+        width:50px;
+        height:50px;
+        float:left;
+        margin-top:10px;
+    }
+
+    .content0 figure img{
+        width:100%;
+    }
+    .txt{
+        width:190px;
+        float:right;
+        margin-top:10px;
+    }
+
+    .txt1{
+        width:200px;
+        height:20px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        margin-bottom:10px;
+    }
+
+    .txt2{
+        text-align: right;
+    }
+
+    /*footer*/
+
+    footer{
+        display:block;
+        width:1000px;
+        height:200px;
+        padding:10px;
+        margin: 0 auto;
+        border:1px solid black;
+        box-sizing: border-box;
+        text-align: center;
+        font-size:30px;
+    }
+
+    footer div{
+        margin-top:59px;
+    }
+
+
+    /*wing banner*/
+
+
+    #wing_btn{
+        display:none;
+    }
+
+    .wing_box{
+        position:fixed;
+        top:0;
+        right:-300px;
+        transition:all 0.5s 0.1s;
+    }
+
+    .open_btn{
+        border:1px solid black;
+        box-sizing: border-box;
+        display:inline-block;
+        padding:10px;
+        float:left;
+        margin-top:100%;
+    }
+
+    .close_btn{
+        border:1px solid black;
+        box-sizing: border-box;
+        display:inline-block;
+        padding:10px;
+        float:left;
+        display:none;
+        margin-top:100%;
+    }
+
+    .wing_con{
+        width:300px;
+        height:100vh;
+        background-color: lightcoral;
+        float:left;
+        font-size:30px;
+        text-align: center;
+        line-height:969px;
+        }
+
+    #wing_btn:checked ~ .wing_box .open_btn{display:none;}
+    #wing_btn:checked ~ .wing_box .close_btn{display:block;}
+
+    #wing_btn:checked ~ .wing_box{right:0}
+    #wing_btn ~ .wing_box{right:-300px}
+
+
+    
+</style>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="gnb">
+                <ul>
+                    <li>Web</li>
+                    <li>Mobile</li>
+                    <li>Game</li>
+                    <li>Simulation</li>
+                    <li>Data</li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <h1>Rint Development<br/><b>HTML5+CSS3 Basic</b></h1>
+            </div>
+            <nav class="lnb">
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Node.js</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+            <section class="con01">
+
+                <div class="content">
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab</p>
+                </div>
+                
+                <div class="content">
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab</p>
+                </div>
+
+                <div class="content">
+                    <h2>Main Article</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab
+                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                        officia sit magnam quis, praesentium eligendi libero voluptas
+                        totam porro ex provident, voluptatibus veniam. Quae ullam rec
+                        usandae eius consectetur error perspiciatis nisi quas molesti
+                        ae,rem, tempore veniam nulla esse repellat iusto optio non vo
+                        luptatemfacere? Itaque quaerat corporis autem veniam fuga! ab</p>
+                </div>
+
+            </section>
+            
+            <section class="con02">
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+
+                <div class="content0">
+                    <figure><img src="img/img.jpg" alt="무슨과일일까요"></figure>
+                    <div class="txt">
+                        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iusto?</p>
+                        <p class="txt2">2022.03.30</p>
+                    </div>
+                </div>
+
+                
+
+            </section>
+    </article>
+    
+
+    <footer>
+        <div><h3>HTML5+CSS3 Basic</h3>
+        <p>Website Layout Basic</p>
+        </div>
+    </footer>
+
+        <input type="checkbox" id="wing_btn">
+
+        <div class="wing_box">
+         <label for="wing_btn" class="open_btn">열어요?</label>
+         <label for="wing_btn" class="close_btn">닫아요?</label>
+         <div class="wing_con">안녕하세요?</div>
+        </div>
+
+    
+</body>
+</html>
