@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        body{overflow:hidden;}
+
+        #btn_gnb{display:none;}
+        #btn_gnb:checked ~ .gnb{height:100%;}
+        #btn_gnb ~ .gnb {height:0;}
+
+        .header{
+            width:100%; height:45px;
+            background-image: url(mobile_img/header_bg.png);
+            position:relative;
+        }
+
+        .header .home{
+            width:62px; height:32px;
+            background:url(mobile_img/left_btn.png);
+            position:absolute;
+            top:7px;
+            left:7px;
+            text-indent:-9999px;
+        }
+
+        .header h1{
+            text-align: center;
+            line-height: 45px;
+            color:white;
+        }
+
+        .header .btn_gnb{
+            width:32px;
+            height:32px;
+            background:url(mobile_img/right_btn.png);
+            position:absolute;
+            top:7px;
+            right:7px;
+            text-indent: -9999px;
+        }
+
+        .lnb{
+            overflow:hidden;
+        }
+
+        .lnb li{
+            width:20%;
+            height:32px;
+            text-align: center;
+            line-height: 32px;
+            background-color:lightcoral;
+            color:rgb(54, 91, 114);
+            float:left;
+        }
+
+        .footer{
+            width:100%;
+            height:45px;
+            background-color:black;
+            color:white;
+            position:fixed;
+            bottom:0;left:0;
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .gnb{
+            width:384px;
+            height:0;
+            background-color:lightblue;
+            text-align: center;
+            position:absolute;
+            right:0;
+            transition:all 0.5s;
+            overflow: hidden;
+        }
+
+        .gnb li{
+            line-height: 32px;
+            border-bottom:1px solid #999;
+            box-sizing: border-box;
+            transition:all 0.2s;
+            cursor: pointer;
+        }
+
+        .gnb li:hover{
+            background:lightcoral;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="btn_gnb">
+    <header class="header">
+        <div class="home">home</div>
+        <h1>Mobile</h1>
+        <label for="btn_gnb" class="btn_gnb">gnb</label>
+    </header>
+
+    <ul class="gnb">
+        <li>gnb01</li>
+        <li>gnb02</li>
+        <li>gnb03</li>
+        <li>gnb04</li>
+        <li>gnb05</li>
+    </ul>
+
+    <ul class="lnb">
+        <li>lnb01</li>
+        <li>lnb02</li>
+        <li>lnb03</li>
+        <li>lnb04</li>
+        <li>lnb05</li>
+    </ul>
+
+    <footer class="footer">
+        copyright
+    </footer>
+    
+</body>
+</html>

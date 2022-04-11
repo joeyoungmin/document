@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+
+        .header{
+            width:100%;
+            height:auto;
+            background-color:rgb(189, 43, 43);
+        }
+
+        .container{
+            display:flex;
+            padding:5px 10px;
+            text-align: center;
+            line-height: 63px;
+            color:#fff;
+        }
+
+        .container .menu00{
+            flex-grow: 1;
+            font-size:30px;
+            margin-right:10px;
+        }
+
+        .container .txt{
+            flex-grow: 30;
+            text-align: left;
+        }
+
+        .container .search{
+            flex-grow: 1;
+            font-size:30px;
+        }
+
+        .menu01{
+            width:100%;
+            height:auto;
+            background-color:rgb(189, 43, 43);
+            color:#fff;
+            display:flex;
+        }
+
+        .menu01 div{
+            flex-grow: 1;
+            text-align: center;
+            font-size:40px;
+            padding:5px 0;
+            box-sizing: border-box;
+        }
+
+        .chatting{}
+
+        .content{
+            width:100%;
+            height:90px;
+        }
+
+        .content{
+            padding-top:20px;
+        }
+
+        .content figure{
+            width:100px;
+            height:90px;
+            float:left;
+            margin-right:20px;
+        }
+
+        .content_img img{
+            width:60px;
+            height:60px;
+            display:block;
+            margin:5px auto;
+        }
+
+        .content_txt{
+            width:calc(100% -100px -20px);
+            height:90px;
+            display:flex;
+            border-bottom:1px solid lightgray;
+        }
+
+        .content_txt h2{
+            font-weight: 500;
+            font-size:20px;
+
+        }
+        .content_txt .content_txt_right p{
+            line-height:60px;
+            color:#999
+        }
+
+        .content_txt_right{
+            flex-grow: 1;
+            
+        }
+        .content_txt_left{
+            flex-grow: 0;
+            color:#999;
+            margin-right:20px;
+        }
+
+        .content_txt_left p:nth-child(2){
+            display:inline-block;
+            background-color:red;
+            color:#fff;
+            padding:0 5px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin:30px 0 0 30px;
+        }
+
+        .content01 .content_txt_left p:nth-child(2){
+            padding:0 10px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+            <div class="container">
+                <div class="menu00"><i class="xi-bars"></i></div>
+                <div class="txt"><h1>Friends</h1></div>
+                <div class="search"><i class="xi-search"></i></div>
+            </div>
+    </header>
+    <div class="menu01">
+        <div><i class="xi-user"></i></div>
+        <div><i class="xi-speech"></i></div>
+        <div><i class="xi-star"></i></div>
+        <div><i class="xi-ellipsis-h"></i></div>
+    </div>
+
+    <div class="chatting">
+        <div class="content content01">
+            <figure class="content_img"><img src="list_img/avatar9.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>Sleepy.P</h2>
+                    <p>Yes! That`s right.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>Pm 10:30</p>
+                    <p>11</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content02">
+            <figure class="content_img"><img src="list_img/avatar10.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>James</h2>
+                    <p>Thank you so much.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>Pm 08:44</p>
+                    <p>123</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content content03">
+            <figure class="content_img"><img src="list_img/avatar11.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>Cozima</h2>
+                    <p>lt`s beatiful sunny day.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>Am 11:27</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content04">
+            <figure class="content_img"><img src="list_img/avatar12.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>Hello</h2>
+                    <p>See you again.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>2017/11/20</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content05">
+            <figure class="content_img"><img src="list_img/avatar13.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>Clala</h2>
+                    <p>What a beatiful!</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>2017/8/8</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content06">
+            <figure class="content_img"><img src="list_img/avatar14.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>Amma</h2>
+                    <p>So great.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>2017/3/27</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content content07">
+            <figure class="content_img"><img src="list_img/avatar15.png" alt="avatar9"></figure>
+            <div class="content_txt">
+                <div class="content_txt_right">
+                    <h2>David</h2>
+                    <p>Bye.</p>
+                </div>
+                <div class="content_txt_left">
+                    <p>2017.5/31</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>

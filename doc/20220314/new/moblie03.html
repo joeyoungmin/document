@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+
+        .header,.footer{
+            width:100%;
+            height:200px;
+            border:1px solid black; box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+
+        .wrap{
+            display:flex;
+        }
+
+
+        .wrap .aside{
+            width:200px;
+            /* flex-grow:1; */
+             height:700px;
+            background-color:aquamarine;
+            margin-right:20px;
+        }
+
+        .wrap .content{
+            flex-grow:2;
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header"></header>
+    <div class="wrap">
+        <aside class="aside">
+            menu
+        </aside>
+
+        <div class="content">
+            content
+        </div>
+
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+    
+</body>
+</html>
